@@ -1,15 +1,18 @@
 <html>
    <style>
-   ul{list-style-type:none;
-    display:inline-flex;}
+   .nav-bar{
+    display:inline-flex;
+    padding:5px;}
 
-    li{padding:5px;}
+a{text-decoration:none;}
+a:link{color:black;}
+a:hover{color:blue;}
 
    #about{
-    margin-left:-30px;}
+    margin-left:-10px;}
   
     #gmail{
-        margin-left:1000px;}
+        margin-left:900px;}
     
 
    #logo{margin-top:130px;
@@ -21,35 +24,71 @@
     margin-left:auto;
     margin-right:auto;
     display:block;
-    width:auto;
-    border-radius:10%;}
+    width:500px;
+    height:40px;
+    border-radius:25%;}
 
-    .button{
-    margin-left: 320px;
-    display:inline-flex;}
+    #sign-in{font-size:15px;
+            background-color:dodgerblue;
+            color:white;}
+
+    .btn-group{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    }
+
+    .footer{position:absolute;
+    bottom:5px;
+    padding:5px;
+    background-color:lightgrey;
+    opacity: 60%;}
+
+    #ad{margin-left:20px;}
+    #bus{}
+    #search{}
+    #privacy{margin-left:800px;}
+    #terms{}
+    #settings{}
 
 </style>
+
+<head>
 <nav>
-    <ul>
-        <li id=about>About</li>
-        <li id=store>Store</li>
-        <li id=gmail>Gmail</li>
-        <li id=image>Images</li>
-    
-    </ul>
+        <a href="#" id=About class="nav-bar">About</a>
+        <a href="#" id=store class="nav-bar">Store</a>
+        <a href="#" id=gmail class="nav-bar">Gmail</a>
+        <a href="#" id=image class="nav-bar">Images</a>
+   
+        <button id=sign-in>Sign In</button>
+
 </nav>
-<div>
+<h1>
     <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt=Google Logo id=logo>
     
-</div>
+<br>
 
-<div>
-    <input type="text" id=searchbar>
-</div>
+    <input type="text" id=searchbar placeholder=search>
+</h1>
+
     <br> <br>
-    <div>
-   <button class=button> Google Search </button> 
-   <button class=button>I'm Feeling Lucky</button>
+
+<div class="btn-group">
+   <button> Google Search </button> 
+   <button>I'm Feeling Lucky</button>
 </div>
 
+</head>
+
+<br> <br>
+
+<footer class="footer">
+    <a href="#" id=ad>Advertising</a>
+    <a href="#" id=bus>Business</a>
+    <a href="#" id=search>How Search Works</a>
+    <a href="#" id=privacy>Privacy</a>
+    <a href="#" id=terms>Terms</a>
+    <a href="#" id=settings>Settings</a>
+
+</footer>
 </html>
